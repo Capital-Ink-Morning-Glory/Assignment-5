@@ -187,6 +187,7 @@ dependencies = [
     { name = "accelerate" },
     { name = "datasets" },
     { name = "fastapi", extra = ["standard"] },
+    { name = "pydantic" },
     { name = "torch" },
     { name = "transformers" },
 ]
@@ -196,6 +197,7 @@ requires-dist = [
     { name = "accelerate", specifier = ">=1.12.0" },
     { name = "datasets", specifier = ">=4.4.1" },
     { name = "fastapi", extras = ["standard"], specifier = ">=0.124.1" },
+    { name = "pydantic", specifier = ">=2.12.5" },
     { name = "torch", specifier = ">=2.9.1" },
     { name = "transformers", specifier = ">=4.57.3" },
 ]

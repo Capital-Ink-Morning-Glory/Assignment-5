@@ -1,5 +1,6 @@
 from datasets import load_dataset
 from fastapi import FastAPI
+from pydantic import BaseModel
 from transformers import DataCollatorWithPadding, AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments
 
 ds = load_dataset("rajpurkar/squad")
@@ -45,7 +46,7 @@ trainer.train()
 
 
 # Text Generation
-class TextGenerationRequest(trainer):
+class TextGenerationRequest(BaseModel):
     start_word: str
     length: int
 
