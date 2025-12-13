@@ -59,5 +59,5 @@ def generate_with_gpt2(request: TextGenerationRequest):
     encoded_input = tokenizer(request.start_word, return_tensors='pt')
     output = model.generate(**encoded_input, max_length=request.length, do_sample=True)
 
-    return {"generated_text": "That is a great question! " + tokenizer.decode(output[0]) +
+    return {"generated_text": "That is a great question! " + tokenizer.decode(output[0], skip_special_tokens=True) +
                               ". Let me know if you have any other questions"}
