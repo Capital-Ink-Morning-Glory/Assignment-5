@@ -26,4 +26,5 @@ RUN uv sync --frozen
 COPY ./app /code/app
 
 # Command to run the application
+# docker run -p 8000:8000 assignment5
 CMD ["uv", "run", "fastapi", "run", "app/main.py", "--port", "8000"]
