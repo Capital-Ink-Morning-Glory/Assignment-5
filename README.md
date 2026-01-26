@@ -1,2 +1,4 @@
 ## Notice
 Execute the command "docker pull python:3.12-slim-bookworm" before building the Docker image if an error raises in "FROM python:3.12-slim-bookworm", for example, one of the possible errors "DeadlineExceeded: python:3.12-slim-bookworm: failed to resolve source metadata for docker.io/library/python:3.12-slim-bookworm: failed to authorize."
+
+Fine-tuned model link: [](https://huggingface.co/Capital-Ink-Morning-Glory/GPT2-SQuAD)
